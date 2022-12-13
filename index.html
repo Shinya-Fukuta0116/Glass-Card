@@ -10,6 +10,17 @@
 </head>
 
 <body>
+  <nav class="header">
+    <div class="logo">Vinclo</div>
+    <div class="nav-links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Event</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
   <div class="card">
     <div class="content">
       <h2>01</h2>
@@ -20,6 +31,15 @@
     </div>
   </div>
   <script src="app.js"></script>
+  <script src="./vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelector(".card"), {
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 1
+    });
+  </script>
 </body>
 
 </html>
